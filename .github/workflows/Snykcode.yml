@@ -16,7 +16,7 @@ jobs:
          echo "----------Authenticating Snyk-----------"
          ./snyk auth ${{secrets.Snyk_token}}
          echo "----------Snyk Code Scanning-----------"
-         ./snyk code test
+         ./snyk code test --report --project-name="snykcodepoc-240"
              
              
              
