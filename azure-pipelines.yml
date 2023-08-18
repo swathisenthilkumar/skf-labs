@@ -29,4 +29,4 @@ steps:
               echo "----------Authenticating Snyk-----------"
               ./snyk auth $(snyk-token)
               echo "----------Snyk Scanning-----------"
-              ./snyk code test
+              ./snyk code test --report --project-name="snykcodepoc-240"
