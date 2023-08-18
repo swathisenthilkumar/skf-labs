@@ -23,7 +23,7 @@ steps:
     targetType: 'inline'
     script: |
       echo "----------Download Latest Snyk CLI-----------"
-              curl -Lo ./snyk "<Snyk_URL>"
+              curl -Lo ./snyk "https://github.com/snyk/snyk/releases/download/v1.1200.0/snyk-linux"
               chmod +x snyk
               ls -lrt
               echo "----------Authenticating Snyk-----------"
