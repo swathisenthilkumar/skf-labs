@@ -1,23 +1,19 @@
-name: Dependabot fetch metadata
-on: pull_request
+name: Test updated dependencies
 
-permissions:
-  pull-requests: write
-  issues: write
-  repository-projects: write
+on:
+  pull_request:
+    branches:
+      - master
 
 jobs:
-  dependabot:
+  test:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
+
     steps:
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v1
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-      # The following properties are now available:
-      #  - steps.metadata.outputs.dependency-names
-      #  - steps.metadata.outputs.dependency-type
-      #  - steps.metadata.outputs.update-type
-      
+      - uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
