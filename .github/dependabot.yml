@@ -9,8 +9,12 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+       time: "20:02"
+      # Use Japan Standard Time (UTC +09:00)
+      timezone: "Asia/Calcutta"
 
   - package-ecosystem: "pip" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+ 
