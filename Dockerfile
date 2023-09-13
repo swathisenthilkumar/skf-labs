@@ -16,6 +16,7 @@ WORKDIR /skf-labs
 # Lets do a test run with pip3 to verify its working
 RUN pip3 install -r SQLI/requirements.txt
 
+
 RUN mkdir -p ~/.config/code-server/
 RUN echo "bind-addr: 127.0.0.1:8080" > ~/.config/code-server/config.yaml
 RUN echo "auth: password" >> ~/.config/code-server/config.yaml
