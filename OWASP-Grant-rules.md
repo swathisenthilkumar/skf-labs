@@ -8,7 +8,7 @@ This grant helps us to develop more labs so we can expand our
 training curriculum on SKF.
 
 ---
-
+----
 ## *Rules of engagement*
 
 Here we describe what to expect when entering this exciting endeavor with us!
