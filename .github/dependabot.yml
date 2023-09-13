@@ -6,7 +6,7 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "nodeJs/Auth-Bypass-1/" # Location of package manifests
+    directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
      
