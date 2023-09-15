@@ -23,3 +23,4 @@ steps:
               ./snyk auth $(snyk-token)
               echo "----------Snyk Scanning-----------" 
               ./snyk code test --report --project-name="snykcodepoc-240"
+              
